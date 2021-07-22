@@ -249,7 +249,7 @@
       width: 100%;
       height: 2px;
       background-color: $c-light;
-      display: none;
+      // display: none;
       left: 0;
 
       @media (max-width: $tablet) and (orientation: portrait) {
@@ -265,11 +265,11 @@
       }
     }
 
-    &.active {
-      &::after {
-        display: block;
-      }
-    }
+    // &.active {
+    //   &::after {
+    //     display: block;
+    //   }
+    // }
 
     &:hover,
     &:focus {
