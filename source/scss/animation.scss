@@ -26,6 +26,7 @@
 
 //social
 .social-block__toggler {
+  will-change: transform;
   transition: 0.3s;
 
   &::before {
@@ -57,6 +58,7 @@
 }
 
 .social-block__link {
+  will-change: transform;
   opacity: 0;
   transform: translateY(10px);
   transition: 0.5s;
@@ -76,6 +78,7 @@
 
 // intro
 .intro__message {
+  will-change: transform;
   opacity: 0;
   transform: translateY(50px);
   transition: 0.8s;
@@ -92,6 +95,7 @@
 }
 
 .slider__item-text {
+  will-change: transform;
   opacity: 0;
   transform: translateX(30px);
   transition: 0.8s;
@@ -105,6 +109,7 @@
 
 //chat form
 .chat__footer .form {
+  will-change: transform;
   margin-left: auto;
   width: 40%;
   transition: 0.5s;
@@ -116,6 +121,7 @@
 
 // logo
 .page-header__logo {
+  will-change: transform;
   transform: translateX(-50%);
   opacity: 0;
   transition: 0.5s cubic-bezier(0.31, 1.03, 0.84, 0.95);
@@ -132,6 +138,7 @@
     opacity: 1;
     transition: none;
   }
+  will-change: transform;
   opacity: 0;
   transition: 0.5s cubic-bezier(0.31, 1.03, 0.84, 0.95) 0.25s;
 }
@@ -142,6 +149,7 @@
 
 //footer
 .screen__footer {
+  will-change: transform;
   transform: translateY(100%);
   transition: 0.5s cubic-bezier(0.31, 1.03, 0.84, 0.95);
 }
@@ -161,5 +169,108 @@
 .loaded .page-header__toggler {
   @media (max-width: 1024px) and (orientation: portrait) {
     opacity: 1;
+  }
+}
+
+// rules page
+@keyframes bullets {
+  from {
+    opacity: 0;
+    color: transparent;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+    color: #ffffff;
+  }
+}
+
+@keyframes rulesText {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rulesLinkText {
+  from {
+    color: transparent;
+  }
+
+  to {
+    color: rgb(95, 69, 140);
+  }
+}
+
+@keyframes rulesLinkBg {
+  from {
+    opacity: 0;
+    width: 40%;
+  }
+
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.rules__item {
+  &::before {
+    animation-name: bullets;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.32, -0.05, 0.49, 1.5);
+  }
+
+  p {
+    animation-name: rulesText;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+}
+
+.rules__link {
+  animation-name: rulesLinkText;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+
+  &::before {
+    animation-name: rulesLinkBg;
+    animation-duration: 0.5s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+}
+
+@for $i from 1 through 4 {
+  .rules__item:nth-child(#{$i})::before,
+  .rules__item:nth-child(#{$i}) p {
+    animation-delay: (400ms * ($i - 1));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rules__link,
+  .rules__link::before,
+  .rules__item,
+  .rules__item::before {
+    animation: none;
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+
+  .rules__link {
+    color: rgb(95, 69, 140);
   }
 }
