@@ -36,11 +36,11 @@
 
 .loaded .social-block__toggler {
   &::before {
-    animation: bounce 0.5s ease-in-out 0.4s forwards;
+    animation: zoomToggler 0.5s ease-in-out 0.4s forwards;
   }
 }
 
-@keyframes bounce {
+@keyframes zoomToggler {
   70% {
     transform: translate(-50%, -50%) scale(1.1);
   }
@@ -60,7 +60,7 @@
 .social-block__link {
   will-change: transform;
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(1rem);
   transition: 0.5s;
 
   &--fb {
@@ -80,7 +80,7 @@
 .intro__message {
   will-change: transform;
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(5rem);
   transition: 0.8s;
 }
 
@@ -97,7 +97,7 @@
 .slider__item-text {
   will-change: transform;
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateX(3rem);
   transition: 0.8s;
 }
 
@@ -173,64 +173,17 @@
 }
 
 // rules page
-@keyframes bullets {
-  from {
-    opacity: 0;
-    color: transparent;
-    transform: scale(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-    color: #ffffff;
-  }
-}
-
-@keyframes rulesText {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes rulesLinkText {
-  from {
-    color: transparent;
-  }
-
-  to {
-    color: rgb(95, 69, 140);
-  }
-}
-
-@keyframes rulesLinkBg {
-  from {
-    opacity: 0;
-    width: 40%;
-  }
-
-  to {
-    opacity: 1;
-    width: 100%;
-  }
-}
 
 .rules__item {
   &::before {
-    animation-name: bullets;
+    animation-name: zoomIn;
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.32, -0.05, 0.49, 1.5);
   }
 
   p {
-    animation-name: rulesText;
+    animation-name: fadeInRight;
     animation-duration: 0.7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
@@ -238,16 +191,18 @@
 }
 
 .rules__link {
-  animation-name: rulesLinkText;
-  animation-duration: 0.5s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
-
   &::before {
-    animation-name: rulesLinkBg;
+    animation-name: fadeInScaleX;
     animation-duration: 0.5s;
     animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+
+  span {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 1.6s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
   }
@@ -269,8 +224,184 @@
     opacity: 1;
     transform: translate(0) scale(1);
   }
+}
 
-  .rules__link {
-    color: rgb(95, 69, 140);
+.intro__title {
+  will-change: transform;
+}
+
+.text__word {
+  padding: 2rem 0 0;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  white-space: break-spaces;
+  overflow: hidden;
+
+  span {
+    display: inline-block;
+    transform: translate3d(0, 1.1em, 0);
+  }
+}
+
+.screen.active .animated-letters .text__word > span {
+  transform: translate3d(0, 0, 0);
+}
+
+// result images case 2
+
+.result__image-part {
+  .result__image-wrap {
+    position: relative;
+    margin: auto auto 117px;
+    max-width: 751px;
+    width: 100%;
+    height: 372px;
+
+    @media (max-width: $mobile) {
+      margin: auto 0 117px;
+      min-width: 650px;
+    }
+  }
+
+  img {
+    position: absolute;
+    height: auto;
+  }
+
+  .result__image-flamingo {
+    left: 141px;
+    bottom: 22px;
+    max-width: 247px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(12rem) rotate(-10deg);
+    animation-name: showFlamingo, moveFlamingoUpDown;
+    animation-delay: 0s, 0.4s;
+    animation-duration: 0.4s, 3s;
+    animation-fill-mode: forwards, none;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease, ease;
+  }
+
+  @keyframes showFlamingo {
+    from {
+      opacity: 0;
+      transform: translateY(10rem) rotate(-10deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(2rem) rotate(0);
+    }
+  }
+
+  @keyframes moveFlamingoUpDown {
+    0% {
+      transform: translateY(2rem) rotate(0);
+    }
+
+    50% {
+      transform: translateY(0) rotate(6deg);
+    }
+
+    100% {
+      transform: translateY(2rem) rotate(0);
+    }
+  }
+
+  .result__image-leaf_b2 {
+    left: 30px;
+    bottom: 15px;
+    max-width: 277px;
+    opacity: 0;
+    transform-origin: right;
+    transform: rotate(15deg);
+    animation-name: swingForRightEl;
+    animation-delay: 0.2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+
+  .result__image-leaf_b1 {
+    left: 360px;
+    bottom: 90px;
+    max-width: 275px;
+    opacity: 0;
+    transform-origin: left;
+    transform: rotate(-15deg);
+    animation-name: swingForLeftEl;
+    animation-delay: 0.2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+
+  .result__image-leaf_g {
+    left: 350px;
+    bottom: 65px;
+    max-width: 330px;
+    opacity: 0;
+    transform-origin: left;
+    transform: rotate(-15deg);
+    animation-name: swingForLeftEl;
+    animation-delay: 0.2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+
+  .result__image-suitcase {
+    left: 176px;
+    bottom: 14px;
+    max-width: 337px;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: bottom;
+    animation-name: zoomIn;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+}
+
+.form--result {
+  .form__button {
+    --animated-color: #5f458c;
+    color: transparent;
+    animation-name: chageColor;
+    animation-duration: 0.4s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+    &::before {
+      opacity: 0;
+      animation-name: fadeIn;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+      animation-delay: 0.5s;
+    }
+  }
+
+  .form__field {
+    transform-origin: right;
+    transform: scaleX(0.5);
+    opacity: 0;
+    animation-name: fadeInScaleX;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+    &::placeholder {
+      color: transparent;
+      transition: 0.3s;
+    }
+
+    &.animation-done::placeholder {
+      color: #757575;
+    }
   }
 }

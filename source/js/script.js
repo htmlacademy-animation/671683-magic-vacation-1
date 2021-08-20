@@ -9,6 +9,7 @@ import result from './modules/result.js';
 import form from './modules/form.js';
 import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
+import './modules/splitting-typography';
 
 // init modules
 mobileHeight();
@@ -20,7 +21,6 @@ chat();
 result();
 form();
 social();
-
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
 
@@ -39,4 +39,9 @@ pageNav.addEventListener(`click`, () => {
       backgroundBlock.classList.remove(`active`);
     }, 500);
   }
+});
+
+const formFieldResult2 = document.querySelector(`#email-field2`);
+formFieldResult2.addEventListener(`animationend`, () => {
+  formFieldResult2.classList.add(`animation-done`);
 });
