@@ -148,13 +148,13 @@
 }
 
 //footer
-.screen__footer {
+.screen--intro.active .screen__footer {
   will-change: transform;
   transform: translateY(100%);
   transition: 0.5s cubic-bezier(0.31, 1.03, 0.84, 0.95);
 }
 
-.loaded .screen__footer {
+.loaded .screen--intro.active .screen__footer {
   transform: translateY(0);
 }
 
@@ -403,5 +403,101 @@
     &.animation-done::placeholder {
       color: #757575;
     }
+  }
+}
+
+// module3-task3
+
+.screen--story.active .slider__control--prev,
+.screen--story.active .slider__control--next {
+  transform: translateX(var(--space)) rotate(var(--deg));
+  animation-name: roll;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.screen--story.active .slider__control--prev {
+  --space: -3rem;
+  --deg: -90deg;
+}
+
+.slider__control--next {
+  --space: 3rem;
+  --deg: 90deg;
+}
+
+.slide2-active {
+  --state-main: #4875e6;
+  --state-second: #a8cefb;
+}
+
+.slide3-active {
+  --state-main: #a8cefb;
+  --state-second: #4875e6;
+}
+
+.result__button {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+
+  span {
+    --space: 3rem;
+    --deg: 90deg;
+    animation-name: roll;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+.screen--prizes.active .screen__footer {
+  transform: translateY(100%);
+  animation-name: upContent;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.screen--prizes .screen__footer p {
+  transition: 0.5s;
+}
+
+.screen--prizes:not(.active) .screen__footer p {
+  opacity: 0;
+}
+
+.screen--rules .disclaimer ul {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.screen--rules.active .disclaimer ul {
+  opacity: 1;
+}
+
+.screen--rules .screen__disclaimer {
+  transform: translateY(0);
+}
+
+.screen--rules:not(.active) .screen__disclaimer {
+  animation-name: hideContent;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .screen__footer {
+    color: transparent;
+    transition: 0.5s cubic-bezier(0.31, 1.03, 0.84, 0.95);
+  }
+
+  .screen__footer.screen__footer--full {
+    color: #5f458c;
   }
 }
