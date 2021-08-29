@@ -108,3 +108,35 @@
   }
 }
 
+@keyframes roll {
+  from {
+    transform: translateX(var(--space)) rotate(var(--deg));
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes upContent {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hideContent {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
