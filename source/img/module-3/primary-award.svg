@@ -321,6 +321,7 @@
               fill="freeze"
               additive="replace"/>
         <animateTransform
+            id="flowerRotate"
             attributeName="transform"
             type="rotate"
             values='0;5;-5;2;0'
@@ -333,6 +334,19 @@
             begin="flowerTranslate.end"
             repeatCount="1"
             fill="freeze"
+            additive="sum"/>
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            values='0;2;-1;1;0'
+            keySplines="0.33 0.46 0.51 1;
+              0.33 0.46 0.51 1;
+              0.33 0.46 0.51 1;
+              0.33 0.46 0.51 1"
+            calcMode="spline"
+            dur="1.5s"
+            begin="flowerRotate.end"
+            repeatCount="indefinite"
             additive="sum"/>
         <g transform="translate(-150 -328)">
           <path d="M79.18,194A131,131,0,0,1,94.77,220.9a255,255,0,0,1-20.08-23.55,259,259,0,0,1-17.07-25.88A131.72,131.72,0,0,1,79.18,194" fill="#36e69a"/>

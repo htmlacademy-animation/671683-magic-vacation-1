@@ -33,7 +33,7 @@ const backgroundBlock = document.querySelector(`.background-block`);
 const pageNav = document.querySelector(`.page-header__nav`);
 pageNav.addEventListener(`click`, () => {
   const currentSection = document.querySelector(`.screen.active`);
-  if (currentSection.classList.contains(`screen--story`)) {
+  if (currentSection && currentSection.classList.contains(`screen--story`)) {
     backgroundBlock.classList.add(`active`);
     setTimeout(() => {
       backgroundBlock.classList.remove(`active`);
