@@ -28,6 +28,10 @@ export default () => {
       }
       if (menuLinks[i].classList.contains(`prizes-link`)) {
         updateImg(`.primary-award`, `img/module-3/primary-award.svg?` + new Date().getTime());
+        updateImg(`.secondary-award`, ``);
+        setTimeout(() => {
+          updateImg(`.secondary-award`, `img/module-3/secondary-award.svg?` + new Date().getTime());
+        }, 2500);
       }
     });
   }
