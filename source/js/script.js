@@ -46,8 +46,4 @@ formFieldResult2.addEventListener(`animationend`, () => {
   formFieldResult2.classList.add(`animation-done`);
 });
 
-const secondaryAward = document.querySelector(`.secondary-award`);
-setTimeout(() => {
-  secondaryAward.src = `img/module-3/secondary-award.svg?` + new Date().getTime();
-}, 2500);
 
