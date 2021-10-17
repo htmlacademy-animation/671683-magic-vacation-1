@@ -32,7 +32,7 @@
                   type="translate"
                   from="30,0"
                   to="0,0"
-                  dur="0.5s"
+                  dur="0.8s"
                   repeatCount="1"
                   additive="replace"
                   fill="freeze"/>
@@ -42,7 +42,7 @@
                   from="0,0"
                   to="0,-30"
                   dur="0.4s"
-                  begin="0.8s"
+                  begin="1.3s"
                   repeatCount="1"
                   additive="replace"
                   fill="freeze"/>
@@ -50,14 +50,14 @@
               attributeName="opacity"
               from="0"
               to="1"
-              dur="0.3s"
+              dur="0.5s"
               fill="freeze"/>
       <animate xlink:href="#cloud1"
               attributeName="opacity"
               from="1"
               to="0"
               dur="0.3s"
-              begin="0.8s"
+              begin="1.3s"
               fill="freeze"/>
     <g id="cloud3" transform="translate(30, 0)" opacity="0">
       <path id="Vector_6" d="M272.13 145.27H311.9" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
@@ -68,7 +68,7 @@
                   type="translate"
                   from="30,0"
                   to="0,0"
-                  dur="0.5s"
+                  dur="0.8s"
                   repeatCount="1"
                   additive="replace"
                   fill="freeze"/>
@@ -78,7 +78,7 @@
                   from="0,0"
                   to="0,-30"
                   dur="0.4s"
-                  begin="0.8s"
+                  begin="1.3s"
                   repeatCount="1"
                   additive="replace"
                   fill="freeze"/>
@@ -93,7 +93,7 @@
               from="1"
               to="0"
               dur="0.3s"
-              begin="0.8s"
+              begin="1.3s"
               fill="freeze"/>
     <g id="cloud2" transform="translate(45, 0)" opacity="0">
       <path id="Vector_8" d="M235.77 119H216.32C216.198 110.896 213.305 103.078 208.124 96.8464C202.942 90.6144 195.784 86.3436 187.838 84.744C179.893 83.1445 171.64 84.3125 164.45 88.054C157.261 91.7954 151.569 97.8849 148.32 105.31C144.377 103.122 139.939 101.982 135.43 102C130.068 102.018 124.835 103.649 120.412 106.681C115.989 109.713 112.581 114.005 110.63 119H95.48C92.6952 119 90.0245 120.106 88.0554 122.075C86.0862 124.045 84.98 126.715 84.98 129.5C84.98 132.285 86.0862 134.956 88.0554 136.925C90.0245 138.894 92.6952 140 95.48 140H235.78C238.565 140 241.235 138.894 243.205 136.925C245.174 134.956 246.28 132.285 246.28 129.5C246.28 126.715 245.174 124.045 243.205 122.075C241.235 120.106 238.565 119 235.78 119" fill="white"/>
@@ -103,7 +103,7 @@
                   type="translate"
                   from="30,0"
                   to="0,0"
-                  dur="0.5s"
+                  dur="0.8s"
                   repeatCount="1"
                   additive="replace"
                   fill="freeze"/>
@@ -113,7 +113,7 @@
                   from="0,0"
                   to="0,-30"
                   dur="0.4s"
-                  begin="0.8s"
+                  begin="1.3s"
                   repeatCount="1"
                   additive="replace"
                   fill="freeze"/>
@@ -127,7 +127,7 @@
               attributeName="opacity"
               from="1"
               to="0"
-              begin="0.8s"
+              begin="1.3s"
               dur="0.3s"
               fill="freeze"/>
     <path d="M41.1299 329H141.13" stroke="white" stroke-width="2" id="line"/>
@@ -146,12 +146,12 @@
         to="1"
         dur="0.2s"
         fill="freeze"
-        begin="0.4s"/>
+        begin="0.8s"/>
       <animateMotion
           path="M185.174 112.082C209.364 102.842 214.974 96.2422 214.594 91.6422C213.354 76.5122 144.904 52.8622 102.174 85.0822C99.2437 87.2922 70.5137 109.602 73.1737 139.082C76.7137 178.262 133.004 200.232 148.874 206.432C202.524 227.372 243.304 215.222 250.654 233.612C253.544 240.862 251.434 253.302 229.174 276.082"
           dur="1.8s"
           calcMode="linear"
-          begin="0.4s"
+          begin="0.8s"
           fill="freeze"
           repeatCount="1"/>
       <g>
@@ -159,16 +159,16 @@
             attributeName="transform"
             type="scale"
             values="0;1"
-            dur="1.3s"
+            dur="1.5s"
             fill="freeze"
-            begin="0.4s"
+            begin="0.8s"
             additive="replace"/>
           <animateTransform
               attributeName="transform"
               type="rotate"
               values="30;-30;20;18;-6;0"
-              dur="1.5s"
-              begin="0.4s"
+              dur="1.3s"
+              begin="0.8s"
               keySplines="0.33 0 0.67 1;
                   0.33 0 0.67 1;
                   0.33 0 0.67 1;
