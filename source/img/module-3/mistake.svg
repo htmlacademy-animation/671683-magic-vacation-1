@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="662" height="110" viewBox="0 0 662 110" fill="none">
+  <g opacity="0" id="mistake-picture">
+     <animate
+        href="#mistake-picture"
+        attributeName="opacity"
+        from="0"
+        to="1"
+        dur="0.6s"
+        fill="freeze"
+        calcMode="spline"
+        keySplines="0.21 0 0.8 1;"
+      />
+    <path d="M1 85V1H14.44V35.2H51.64V1H65.08V85H51.64V51.64H14.44V85H1Z"
+        fill="none" stroke="#FFFFFF" id="mistakeWordN" stroke-dashoffset="108" stroke-dasharray="0 215" stroke-width="0.2rem" stroke-linejoin="round"/>
+    <animate
+      id="letterN"
+      href="#mistakeWordN"
+      attributeName="stroke-dashoffset"
+      from="108"
+      to="215"
+      dur="0.5s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <animate
+      href="#mistakeWordN"
+      attributeName="stroke-dasharray"
+      from="0 215"
+      to="215 0"
+      dur="0.5s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <path d="M146.46 10.5V26.94H95.84V44.1H129.44V60.5H95.84V78.06H146.48V94.5H82.38V10.5H146.46Z"
+          fill="none" stroke="#FFFFFF" id="mistakeWordE" stroke-dashoffset="116" stroke-dasharray="0 232" stroke-width="0.2rem" stroke-linejoin="round"/>
+    <animate
+      id="letterE"
+      href="#mistakeWordE"
+      attributeName="stroke-dashoffset"
+      from="116"
+      to="232"
+      dur="0.5s"
+      begin="letterN.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <animate
+      href="#mistakeWordE"
+      attributeName="stroke-dasharray"
+      from="0 232"
+      to="232 0"
+      dur="0.5s"
+      begin="letterN.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <path d="M198.06 0.5L218.58 42.86L234.18 0.5H250.62L219.62 84.5H203.22L212.7 58.58L184.62 0.5H198.06Z"
+         fill="none" stroke="#FFFFFF" id="mistakeWordU" stroke-dashoffset="80" stroke-dasharray="0 160" stroke-width="0.2rem" stroke-linejoin="round"/>
+    <animate
+      id="letterU"
+      href="#mistakeWordU"
+      attributeName="stroke-dashoffset"
+      from="80"
+      to="160"
+      dur="0.5s"
+      begin="letterE.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <animate
+      href="#mistakeWordU"
+      attributeName="stroke-dasharray"
+      from="0 160"
+      to="160 0"
+      dur="0.5s"
+      begin="letterE.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <path d="M272.58 36.94V104.5H259.14V20.5H309.3V36.94H272.58Z" fill="none"
+          stroke="#FFFFFF" id="mistakeWordG" stroke-dashoffset="67" stroke-dasharray="0 134" stroke-width="0.2rem" stroke-linejoin="round"/>
+    <animate
+      id="letterG"
+      href="#mistakeWordG"
+      attributeName="stroke-dashoffset"
+      from="67"
+      to="134"
+      dur="0.5s"
+      begin="letterU.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <animate
+      href="#mistakeWordG"
+      attributeName="stroke-dasharray"
+      from="0 134"
+      to="134 0"
+      dur="0.5s"
+      begin="letterU.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <path
+      d="M305.94 99.5L333.94 15.5H361.06L389.14 99.5H375.66L367.84 75.98H330.04L322.26 99.5H305.94ZM362.58 59.5L349.14 19.34L335.7 59.5H362.58Z"
+      fill="none" stroke="#FFFFFF" id="mistakeWordA" stroke-dashoffset="108" stroke-dasharray="0 216" stroke-width="0.2rem" stroke-linejoin="round"/>
+    <animate
+      id="letterA"
+      href="#mistakeWordA"
+      attributeName="stroke-dashoffset"
+      from="108"
+      to="216"
+      dur="0.5s"
+      begin="letterG.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <animate
+      href="#mistakeWordA"
+      attributeName="stroke-dasharray"
+      from="0 216"
+      to="216 0"
+      dur="0.5s"
+      begin="letterG.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <path
+      d="M395.22 102.74V68.06H402.66C407.22 63.38 410.46 49.7 411.42 12.06L411.78 0.5H460.38V68.06H470.38V102.74H455.7V84.5H409.84V102.74H395.22ZM446.94 68.06V16.94H424.38V20.06C423.9 42.5 421.14 57.74 417.18 68.06H446.94Z"
+      fill="none" stroke="#FFFFFF" id="mistakeWordD" stroke-dashoffset="135" stroke-dasharray="0 270" stroke-width="0.2rem" stroke-linejoin="round"/>
+    <animate
+      id="letterD"
+      href="#mistakeWordD"
+      attributeName="stroke-dashoffset"
+      from="135"
+      to="270"
+      dur="0.5s"
+      begin="letterA.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <animate
+      href="#mistakeWordD"
+      attributeName="stroke-dasharray"
+      from="0 270"
+      to="270 0"
+      dur="0.5s"
+      begin="letterA.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <path
+      d="M476.58 94.5L504.58 10.5H531.7L559.74 94.5H546.3L538.5 70.98H500.7L492.9 94.5H476.58ZM533.22 54.5L519.78 14.3L506.34 54.5H533.22Z"
+      fill="none" stroke="#FFFFFF" id="mistakeWordA2" stroke-dashoffset="108" stroke-dasharray="0 216" stroke-width="0.2rem" stroke-linejoin="round"/>
+    <animate
+      id="letterA2"
+      href="#mistakeWordA2"
+      attributeName="stroke-dashoffset"
+      from="108"
+      to="216"
+      dur="0.5s"
+      begin="letterD.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <animate
+      href="#mistakeWordA2"
+      attributeName="stroke-dasharray"
+      from="0 216"
+      to="216 0"
+      dur="0.5s"
+      begin="letterD.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <path
+      d="M567.54 69.38C569.13 70.0217 570.826 70.3608 572.54 70.38C579.14 70.38 582.98 64.14 584.54 12.06L585.06 0.5H631.26V84.5H617.84V16.94H597.66L597.54 20.06C595.98 73.5 587.84 86.9 572.58 86.9C570.315 86.8876 568.059 86.6056 565.86 86.06L567.54 69.38Z"
+      fill="none" stroke="#FFFFFF" id="mistakeWordL" stroke-dashoffset="104" stroke-dasharray="0 208" stroke-width="0.2rem" stroke-linejoin="round"/>
+    <animate
+      id="letterL"
+      href="#mistakeWordL"
+      attributeName="stroke-dashoffset"
+      from="104"
+      to="208"
+      dur="0.5s"
+      begin="letterA2.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <animate
+      href="#mistakeWordL"
+      attributeName="stroke-dasharray"
+      from="0 208"
+      to="208 0"
+      dur="0.5s"
+      begin="letterA2.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <path
+      d="M643 69.9L644.44 1.5H657.9L659.34 69.9H643ZM651.28 76.26C656.08 76.26 659.28 79.5 659.28 84.42C659.28 86.5523 658.433 88.5973 656.925 90.1051C655.417 91.6129 653.372 92.46 651.24 92.46C649.108 92.46 647.063 91.6129 645.555 90.1051C644.047 88.5973 643.2 86.5523 643.2 84.42C643.24 79.5 646.48 76.26 651.28 76.26Z"
+      fill="none" stroke="#FFFFFF" id="mistakeWordMark" stroke-dashoffset="54" stroke-dasharray="0 109" stroke-width="0.2rem" stroke-linejoin="round"/>
+    <animate
+      href="#mistakeWordMark"
+      attributeName="stroke-dashoffset"
+      from="54"
+      to="109"
+      dur="0.5s"
+      begin="letterL.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+    <animate
+      href="#mistakeWordMark"
+      attributeName="stroke-dasharray"
+      from="0 109"
+      to="109 0"
+      dur="0.5s"
+      begin="letterL.begin + 0.1s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.21 0 0.8 1;"
+    />
+  </g>
+</svg>

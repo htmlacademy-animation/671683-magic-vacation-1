@@ -46,4 +46,7 @@ formFieldResult2.addEventListener(`animationend`, () => {
   formFieldResult2.classList.add(`animation-done`);
 });
 
+// const pathP = document.querySelector(`#firstWordP`);
+// console.log(pathP.getTotalLength());
+
 
