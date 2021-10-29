@@ -16,13 +16,13 @@
       href="#mistakeWordN"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -15; 0 0;"
+      values="0 -70; 0 0; 0 -10; 0 0;"
       dur="0.7s"
       fill="freeze"
       calcMode="spline"
-      keySplines="0.42 0 1 1;
-        0.42 0 1 1;
-        0.42 0 1 1"
+      keySplines="0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterN"
@@ -51,14 +51,14 @@
       href="#mistakeWordE"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -15; 0 0;"
+      values="0 -70; 0 0; 0 -10; 0 0;"
       dur="0.7s"
       fill="freeze"
       begin="letterN.begin + 0.1s"
       calcMode="spline"
-      keySplines="0.42 0 1 1;
-        0.42 0 1 1;
-        0.42 0 1 1"
+      keySplines="0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterE"
@@ -89,14 +89,14 @@
       href="#mistakeWordU"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -15; 0 0;"
+      values="0 -70; 0 0; 0 -10; 0 0;"
       dur="0.7s"
       fill="freeze"
       begin="letterE.begin + 0.1s"
       calcMode="spline"
-      keySplines="0.42 0 1 1;
-        0.42 0 1 1;
-        0.42 0 1 1"
+      keySplines="0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterU"
@@ -127,14 +127,14 @@
       href="#mistakeWordG"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -15; 0 0;"
+      values="0 -70; 0 0; 0 -10; 0 0;"
       dur="0.7s"
       fill="freeze"
       begin="letterU.begin + 0.1s"
       calcMode="spline"
-      keySplines="0.42 0 1 1;
-        0.42 0 1 1;
-        0.42 0 1 1"
+      keySplines="0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterG"
@@ -166,14 +166,14 @@
       href="#mistakeWordA"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -15; 0 0;"
+      values="0 -70; 0 0; 0 -10; 0 0;"
       dur="0.7s"
       fill="freeze"
       begin="letterG.begin + 0.1s"
       calcMode="spline"
-      keySplines="0.42 0 1 1;
-        0.42 0 1 1;
-        0.42 0 1 1"
+      keySplines="0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterA"
@@ -205,14 +205,14 @@
       href="#mistakeWordD"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -15; 0 0;"
+      values="0 -70; 0 0; 0 -10; 0 0;"
       dur="0.7s"
       fill="freeze"
       begin="letterA.begin + 0.1s"
       calcMode="spline"
-      keySplines="0.42 0 1 1;
-        0.42 0 1 1;
-        0.42 0 1 1"
+      keySplines="0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterD"
@@ -244,14 +244,14 @@
       href="#mistakeWordA2"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -15; 0 0;"
+      values="0 -70; 0 0; 0 -10; 0 0;"
       dur="0.7s"
       fill="freeze"
       begin="letterD.begin + 0.1s"
       calcMode="spline"
-      keySplines="0.42 0 1 1;
-        0.42 0 1 1;
-        0.42 0 1 1"
+      keySplines="0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterA2"
@@ -283,14 +283,14 @@
       href="#mistakeWordL"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -15; 0 0;"
+      values="0 -70; 0 0; 0 -10; 0 0;"
       dur="0.7s"
       fill="freeze"
       begin="letterA2.begin + 0.1s"
       calcMode="spline"
-      keySplines="0.42 0 1 1;
-        0.42 0 1 1;
-        0.42 0 1 1"
+      keySplines="0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterL"
@@ -322,14 +322,14 @@
       href="#mistakeWordMark"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -15; 0 0;"
+      values="0 -70; 0 0; 0 -10; 0 0;"
       dur="0.7s"
       fill="freeze"
       begin="letterL.begin + 0.1s"
       calcMode="spline"
-      keySplines="0.42 0 1 1;
-        0.42 0 1 1;
-        0.42 0 1 1"
+      keySplines="0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22;
+        0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       href="#mistakeWordMark"
