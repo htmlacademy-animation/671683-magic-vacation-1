@@ -10,6 +10,7 @@ import form from './modules/form.js';
 import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
 import './modules/splitting-typography';
+import updateImg from './modules/updateImg';
 
 // init modules
 mobileHeight();
@@ -21,6 +22,8 @@ chat();
 result();
 form();
 social();
+updateImg();
+
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
 

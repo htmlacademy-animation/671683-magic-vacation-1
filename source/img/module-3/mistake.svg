@@ -1,159 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="662" height="270" viewBox="0 0 662 110" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="662" height="270" viewBox="0 0 662 110" fill="none">
   <g opacity="0" id="mistake-picture">
      <animate
-        href="#mistake-picture"
+        xlink:href="#mistake-picture"
         attributeName="opacity"
         from="0"
         to="1"
-        dur="0.6s"
+        dur="0.4s"
         fill="freeze"
         calcMode="spline"
         keySplines="0.21 0 0.8 1"
       />
     <path d="M1 90V6H14.44V40.2H51.64V6H65.08V90H51.64V56.64H14.44V90H1Z"
-        transform="translate(0 -70)" fill="none" stroke="#FFFFFF" id="mistakeWordN" stroke-dashoffset="108" stroke-dasharray="0 215" stroke-width="0.2rem" stroke-linejoin="round"/>
+        transform="translate(0 -90)" fill="none" stroke="#FFFFFF" id="mistakeWordN" stroke-dashoffset="108" stroke-dasharray="0 215" stroke-width="0.2rem" stroke-linejoin="round"/>
     <animateTransform
-      href="#mistakeWordN"
+      xlink:href="#mistakeWordN"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -10; 0 0;"
-      dur="0.7s"
+      values="0 -90; 0 0; 0 -15; 0 0;"
+      dur="1s"
       fill="freeze"
       calcMode="spline"
+      keyTimes="0; 0.75; 0.9; 1"
       keySplines="0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterN"
-      href="#mistakeWordN"
+      xlink:href="#mistakeWordN"
       attributeName="stroke-dashoffset"
       from="108"
       to="215"
-      dur="0.5s"
+      dur="0.7s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <animate
-      href="#mistakeWordN"
+      xlink:href="#mistakeWordN"
       attributeName="stroke-dasharray"
       from="0 215"
       to="215 0"
-      dur="0.5s"
+      dur="0.7s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <path d="M146.46 6V22.44H95.84V39.6H129.44V56H95.84V73.56H146.48V90H82.38V6H146.46Z"
-      transform="translate(0 -70)" fill="none" stroke="#FFFFFF" id="mistakeWordE" stroke-dashoffset="116" stroke-dasharray="0 232" stroke-width="0.2rem" stroke-linejoin="round"/>
+      transform="translate(0 -90)" fill="none" stroke="#FFFFFF" id="mistakeWordE" stroke-dashoffset="116" stroke-dasharray="0 232" stroke-width="0.2rem" stroke-linejoin="round"/>
     <animateTransform
-      href="#mistakeWordE"
+      xlink:href="#mistakeWordE"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -10; 0 0;"
-      dur="0.7s"
+      values="0 -90; 0 0; 0 -15; 0 0;"
+      dur="1s"
       fill="freeze"
       begin="letterN.begin + 0.1s"
       calcMode="spline"
+      keyTimes="0; 0.75; 0.9; 1"
       keySplines="0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterE"
-      href="#mistakeWordE"
+      xlink:href="#mistakeWordE"
       attributeName="stroke-dashoffset"
       from="116"
       to="232"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterN.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <animate
-      href="#mistakeWordE"
+      xlink:href="#mistakeWordE"
       attributeName="stroke-dasharray"
       from="0 232"
       to="232 0"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterN.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <path d="M198.06 6L218.58 48.36L234.18 6H250.62L219.62 90H203.22L212.7 64.08L184.62 6H198.06Z"
-      transform="translate(0 -70)" fill="none" stroke="#FFFFFF" id="mistakeWordU" stroke-dashoffset="80" stroke-dasharray="0 160" stroke-width="0.2rem" stroke-linejoin="round"/>
+      transform="translate(0 -90)" fill="none" stroke="#FFFFFF" id="mistakeWordU" stroke-dashoffset="80" stroke-dasharray="0 160" stroke-width="0.2rem" stroke-linejoin="round"/>
     <animateTransform
-      href="#mistakeWordU"
+      xlink:href="#mistakeWordU"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -10; 0 0;"
-      dur="0.7s"
+      values="0 -90; 0 0; 0 -15; 0 0;"
+      dur="1s"
       fill="freeze"
       begin="letterE.begin + 0.1s"
       calcMode="spline"
+      keyTimes="0; 0.75; 0.9; 1"
       keySplines="0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterU"
-      href="#mistakeWordU"
+      xlink:href="#mistakeWordU"
       attributeName="stroke-dashoffset"
       from="80"
       to="160"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterE.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <animate
-      href="#mistakeWordU"
+      xlink:href="#mistakeWordU"
       attributeName="stroke-dasharray"
       from="0 160"
       to="160 0"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterE.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <path d="M272.58 22.44V90H259.14V6H309.3V22.44H272.58Z" fill="none"
-      transform="translate(0 -70)" stroke="#FFFFFF" id="mistakeWordG" stroke-dashoffset="67" stroke-dasharray="0 134" stroke-width="0.2rem" stroke-linejoin="round"/>
+      transform="translate(0 -90)" stroke="#FFFFFF" id="mistakeWordG" stroke-dashoffset="67" stroke-dasharray="0 134" stroke-width="0.2rem" stroke-linejoin="round"/>
     <animateTransform
-      href="#mistakeWordG"
+      xlink:href="#mistakeWordG"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -10; 0 0;"
-      dur="0.7s"
+      values="0 -90; 0 0; 0 -15; 0 0;"
+      dur="1s"
       fill="freeze"
       begin="letterU.begin + 0.1s"
       calcMode="spline"
+      keyTimes="0; 0.75; 0.9; 1"
       keySplines="0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterG"
-      href="#mistakeWordG"
+      xlink:href="#mistakeWordG"
       attributeName="stroke-dashoffset"
       from="67"
       to="134"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterU.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <animate
-      href="#mistakeWordG"
+      xlink:href="#mistakeWordG"
       attributeName="stroke-dasharray"
       from="0 134"
       to="134 0"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterU.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
@@ -161,38 +165,39 @@
     />
     <path
       d="M305.94 90L333.94 6H361.06L389.14 90H375.66L367.84 66.48H330.04L322.26 90H305.94ZM362.58 50L349.14 9.84L335.7 50H362.58Z"
-      transform="translate(0 -70)" fill="none" stroke="#FFFFFF" id="mistakeWordA" stroke-dashoffset="108" stroke-dasharray="0 216" stroke-width="0.2rem" stroke-linejoin="round"/>
+      transform="translate(0 -90)" fill="none" stroke="#FFFFFF" id="mistakeWordA" stroke-dashoffset="108" stroke-dasharray="0 216" stroke-width="0.2rem" stroke-linejoin="round"/>
     <animateTransform
-      href="#mistakeWordA"
+      xlink:href="#mistakeWordA"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -10; 0 0;"
-      dur="0.7s"
+      values="0 -90; 0 0; 0 -15; 0 0;"
+      dur="1s"
       fill="freeze"
       begin="letterG.begin + 0.1s"
       calcMode="spline"
+      keyTimes="0; 0.75; 0.9; 1"
       keySplines="0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterA"
-      href="#mistakeWordA"
+      xlink:href="#mistakeWordA"
       attributeName="stroke-dashoffset"
       from="108"
       to="216"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterG.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <animate
-      href="#mistakeWordA"
+      xlink:href="#mistakeWordA"
       attributeName="stroke-dasharray"
       from="0 216"
       to="216 0"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterG.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
@@ -200,38 +205,39 @@
     />
     <path
       d="M395.22 108.24V73.56H402.66C407.22 68.88 410.46 55.2 411.42 17.56L411.78 6H460.38V73.56H470.38V108.24H455.7V90H409.84V108.24H395.22ZM446.94 73.56V22.44H424.38V25.56C423.9 48 421.14 63.24 417.18 73.56H446.94Z"
-      transform="translate(0 -70)" fill="none" stroke="#FFFFFF" id="mistakeWordD" stroke-dashoffset="135" stroke-dasharray="0 270" stroke-width="0.2rem" stroke-linejoin="round"/>
+      transform="translate(0 -90)" fill="none" stroke="#FFFFFF" id="mistakeWordD" stroke-dashoffset="135" stroke-dasharray="0 270" stroke-width="0.2rem" stroke-linejoin="round"/>
     <animateTransform
-      href="#mistakeWordD"
+      xlink:href="#mistakeWordD"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -10; 0 0;"
-      dur="0.7s"
+      values="0 -90; 0 0; 0 -15; 0 0;"
+      dur="1s"
       fill="freeze"
       begin="letterA.begin + 0.1s"
       calcMode="spline"
+      keyTimes="0; 0.75; 0.9; 1"
       keySplines="0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterD"
-      href="#mistakeWordD"
+      xlink:href="#mistakeWordD"
       attributeName="stroke-dashoffset"
       from="135"
       to="270"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterA.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <animate
-      href="#mistakeWordD"
+      xlink:href="#mistakeWordD"
       attributeName="stroke-dasharray"
       from="0 270"
       to="270 0"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterA.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
@@ -239,38 +245,39 @@
     />
     <path
       d="M476.58 90L504.58 6H531.7L559.74 90H546.3L538.5 66.48H500.7L492.9 90H476.58ZM533.22 50L519.78 9.8L506.34 50H533.22Z"
-      transform="translate(0 -70)" fill="none" stroke="#FFFFFF" id="mistakeWordA2" stroke-dashoffset="108" stroke-dasharray="0 216" stroke-width="0.2rem" stroke-linejoin="round"/>
+      transform="translate(0 -90)" fill="none" stroke="#FFFFFF" id="mistakeWordA2" stroke-dashoffset="108" stroke-dasharray="0 216" stroke-width="0.2rem" stroke-linejoin="round"/>
     <animateTransform
-      href="#mistakeWordA2"
+      xlink:href="#mistakeWordA2"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -10; 0 0;"
-      dur="0.7s"
+      values="0 -90; 0 0; 0 -15; 0 0;"
+      dur="1s"
       fill="freeze"
       begin="letterD.begin + 0.1s"
       calcMode="spline"
+      keyTimes="0; 0.75; 0.9; 1"
       keySplines="0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterA2"
-      href="#mistakeWordA2"
+      xlink:href="#mistakeWordA2"
       attributeName="stroke-dashoffset"
       from="108"
       to="216"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterD.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <animate
-      href="#mistakeWordA2"
+      xlink:href="#mistakeWordA2"
       attributeName="stroke-dasharray"
       from="0 216"
       to="216 0"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterD.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
@@ -278,38 +285,39 @@
     />
     <path
       d="M567.54 74.88C569.13 75.5217 570.826 75.8608 572.54 75.88C579.14 75.88 582.98 69.64 584.54 17.56L585.06 6H631.26V90H617.84V22.44H597.66L597.54 25.56C595.98 79 587.84 92.4 572.58 92.4C570.315 92.3876 568.059 92.1056 565.86 91.56L567.54 74.88Z"
-      transform="translate(0 -70)" fill="none" stroke="#FFFFFF" id="mistakeWordL" stroke-dashoffset="104" stroke-dasharray="0 208" stroke-width="0.2rem" stroke-linejoin="round"/>
+      transform="translate(0 -90)" fill="none" stroke="#FFFFFF" id="mistakeWordL" stroke-dashoffset="104" stroke-dasharray="0 208" stroke-width="0.2rem" stroke-linejoin="round"/>
     <animateTransform
-      href="#mistakeWordL"
+      xlink:href="#mistakeWordL"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -10; 0 0;"
-      dur="0.7s"
+      values="0 -90; 0 0; 0 -15; 0 0;"
+      dur="1s"
       fill="freeze"
       begin="letterA2.begin + 0.1s"
       calcMode="spline"
+      keyTimes="0; 0.75; 0.9; 1"
       keySplines="0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
       id="letterL"
-      href="#mistakeWordL"
+      xlink:href="#mistakeWordL"
       attributeName="stroke-dashoffset"
       from="104"
       to="208"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterA2.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <animate
-      href="#mistakeWordL"
+      xlink:href="#mistakeWordL"
       attributeName="stroke-dasharray"
       from="0 208"
       to="208 0"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterA2.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
@@ -317,37 +325,38 @@
     />
     <path
       d="M643 74.4L644.44 6H657.9L659.34 74.4H643ZM651.28 80.76C656.08 80.76 659.28 84 659.28 88.92C659.28 91.0523 658.433 93.0973 656.925 94.6051C655.417 96.1129 653.372 96.96 651.24 96.96C649.108 96.96 647.063 96.1129 645.555 94.6051C644.047 93.0973 643.2 91.0523 643.2 88.92C643.24 84 646.48 80.76 651.28 80.76Z"
-      transform="translate(0 -80)" fill="none" stroke="#FFFFFF" id="mistakeWordMark" stroke-dashoffset="54" stroke-dasharray="0 109" stroke-width="0.2rem" stroke-linejoin="round"/>
+      transform="translate(0 -90)" fill="none" stroke="#FFFFFF" id="mistakeWordMark" stroke-dashoffset="54" stroke-dasharray="0 109" stroke-width="0.2rem" stroke-linejoin="round"/>
     <animateTransform
-      href="#mistakeWordMark"
+      xlink:href="#mistakeWordMark"
       attributeName="transform"
       type="translate"
-      values="0 -70; 0 0; 0 -10; 0 0;"
-      dur="0.7s"
+      values="0 -90; 0 0; 0 -15; 0 0;"
+      dur="1s"
       fill="freeze"
       begin="letterL.begin + 0.1s"
       calcMode="spline"
+      keyTimes="0; 0.75; 0.9; 1"
       keySplines="0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22;
         0.32 0.8 0.92 0.22"
       additive="replace"/>
     <animate
-      href="#mistakeWordMark"
+      xlink:href="#mistakeWordMark"
       attributeName="stroke-dashoffset"
       from="54"
       to="109"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterL.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.21 0 0.8 1;"
     />
     <animate
-      href="#mistakeWordMark"
+      xlink:href="#mistakeWordMark"
       attributeName="stroke-dasharray"
       from="0 109"
       to="109 0"
-      dur="0.5s"
+      dur="0.7s"
       begin="letterL.begin + 0.1s"
       fill="freeze"
       calcMode="spline"
