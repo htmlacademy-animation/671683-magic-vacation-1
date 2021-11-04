@@ -11,6 +11,7 @@ import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
 import './modules/splitting-typography';
 import updateImg from './modules/updateImg';
+import timer from './modules/timer.js';
 
 // init modules
 mobileHeight();
@@ -23,6 +24,7 @@ result();
 form();
 social();
 updateImg();
+timer();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
