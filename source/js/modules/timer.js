@@ -1,38 +1,64 @@
-export default () => {
-  const timerMinutes = document.querySelector(`.game__counter-min`);
-  const timerSeconds = document.querySelector(`.game__counter-sec`);
+export class GameTimer {
+  constructor({minutesSelecctor, secondsSelector, timeMinutes}) {
+    this.timerMinutes = document.querySelector(minutesSelecctor);
+    this.timerSeconds = document.querySelector(secondsSelector);
+    this.timeMinutes = timeMinutes;
+    this.intervalTimerId = null;
+    this.requestAnimationId = null;
+  }
 
-  const formatTime = (time) => {
+  static formatTime(time) {
     return time < 10 ? `0${time}` : time;
-  };
+  }
 
-  const draw = (min, sec) => {
-    timerMinutes.textContent = formatTime(min);
-    timerSeconds.textContent = formatTime(sec);
-  };
+  knowStartTime() {
+    let obj;
+    if (this.timeMinutes >= 1) {
+      obj = {
+        min: GameTimer.formatTime(this.timeMinutes),
+        sec: `00`
+      };
+    } else {
+      obj = {
+        min: `00`,
+        sec: GameTimer.formatTime(60 / this.timeMinutes)
+      };
+    }
+    return obj;
+  }
 
-  const calcTimerData = (ms) => {
+  draw(min, sec) {
+    this.timerMinutes.textContent = GameTimer.formatTime(min);
+    this.timerSeconds.textContent = GameTimer.formatTime(sec);
+  }
+
+  calcTimerData(ms) {
     const date = new Date(ms);
     return {
       min: date.getMinutes(),
       sec: date.getSeconds(),
     };
-  };
+  }
 
-  const startGameSessionTimer = (timeMinutes) => {
-    let currentTime = timeMinutes * 60 * 1000;
-    const timer = setInterval(() => {
+  start() {
+    let currentTime = this.timeMinutes * 60 * 1000;
+    this.intervalTimerId = setInterval(() => {
       currentTime -= 1000;
-      const {min, sec} = calcTimerData(currentTime);
-      requestAnimationFrame(() => {
-        draw(min, sec);
+      const {min, sec} = this.calcTimerData(currentTime);
+      this.requestAnimationId = requestAnimationFrame(() => {
+        this.draw(min, sec);
       });
 
       if (currentTime <= 0) {
-        timer.clear();
+        this.stop();
       }
     }, 1000);
-  };
+  }
 
-  startGameSessionTimer(5);
-};
+  stop() {
+    clearInterval(this.intervalTimerId);
+    cancelAnimationFrame(this.requestAnimationId);
+    this.timerMinutes.textContent = this.knowStartTime().min;
+    this.timerSeconds.textContent = this.knowStartTime().sec;
+  }
+}

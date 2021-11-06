@@ -11,7 +11,8 @@ import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
 import './modules/splitting-typography';
 import updateImg from './modules/updateImg';
-import timer from './modules/timer.js';
+import {GameTimer} from './modules/timer.js';
+import {Router} from './modules/router.js';
 
 // init modules
 mobileHeight();
@@ -24,7 +25,6 @@ result();
 form();
 social();
 updateImg();
-timer();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
@@ -74,3 +74,35 @@ tempoResultBtnS.forEach((btn) => {
     });
   });
 });
+
+const gameTimer = new GameTimer({
+  minutesSelecctor: `.game__counter-min`,
+  secondsSelector: `.game__counter-sec`,
+  timeMinutes: 5,
+});
+
+const router = new Router([
+  {
+    path: `top`,
+  },
+  {
+    path: `story`,
+  },
+  {
+    path: `prizes`,
+  },
+  {
+    path: `rules`,
+  },
+  {
+    path: `game`,
+    onInit() {
+      gameTimer.start();
+    },
+    onLeave() {
+      gameTimer.stop();
+    },
+  },
+]);
+
+router.init();
