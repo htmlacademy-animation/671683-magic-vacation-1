@@ -30,10 +30,6 @@ updateImg();
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
 
-const getRandomNum = (max) => {
-  return Math.floor(Math.random() * max);
-};
-
 const body = document.querySelector(`body`);
 window.addEventListener(`load`, function () {
   body.classList.add(`loaded`);
@@ -80,6 +76,9 @@ tempoResultBtnS.forEach((btn) => {
   });
 });
 
+// prizes
+const prizeItems = document.querySelectorAll(`.prizes__item`);
+
 const gameTimer = new GameTimer({
   minutesSelecctor: `.game__counter-min`,
   secondsSelector: `.game__counter-sec`,
@@ -94,8 +93,8 @@ const secAwardNum = new AnimatedNumbers({
 
 const addAwardNum = new AnimatedNumbers({
   selector: `.add-award-num b`,
-  delay: 4500,
-  step: getRandomNum(450),
+  delay: 6500,
+  step: 187,
   startNumber: 11,
   endNumber: 900,
 });
@@ -110,11 +109,17 @@ const router = new Router([
   {
     path: `prizes`,
     onInit() {
+      prizeItems.forEach((item) => {
+        item.classList.add(`active`);
+      });
       secAwardNum.animate();
       addAwardNum.animate();
     },
 
     onLeave() {
+      prizeItems.forEach((item) => {
+        item.classList.remove(`active`);
+      });
       secAwardNum.clear();
       secAwardNum.setStartNumber();
       addAwardNum.clear();
