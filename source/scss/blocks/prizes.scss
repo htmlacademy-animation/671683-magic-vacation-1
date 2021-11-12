@@ -127,6 +127,8 @@
   }
 
   &--journeys {
+    margin-right: -15rem;
+
     .prizes__icon {
       position: relative;
       left: -5.9rem;
@@ -156,7 +158,9 @@
   }
 
   &--cases {
-    margin-left: 7rem;
+    width: 35rem;
+    margin-left: 0;
+    // margin-left: 7rem;
 
     @media (min-width: $stop-scaling) {
       margin-left: 70px;
@@ -167,8 +171,12 @@
       padding-left: 1.5rem;
     }
 
+    .prizes__desc {
+      justify-content: flex-end;
+    }
+
     .prizes__icon {
-      width: 18.8rem;
+      // width: 18.8rem;
 
       @media (min-width: $stop-scaling) {
         width: 188px;
@@ -190,12 +198,19 @@
   }
 
   &--codes {
+    width: 38rem;
+    margin-left: 0;
+
     @media (max-width: $tablet) and (orientation: portrait) {
       padding-left: 0.8rem;
     }
 
+    .prizes__desc {
+      justify-content: flex-end;
+    }
+
     .prizes__icon {
-      width: 26rem;
+      // width: 26rem;
 
       @media (min-width: $stop-scaling) {
         width: 260px;

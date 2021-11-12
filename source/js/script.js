@@ -30,6 +30,10 @@ updateImg();
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
 
+const getRandomNum = (max) => {
+  return Math.floor(Math.random() * max);
+};
+
 const body = document.querySelector(`body`);
 window.addEventListener(`load`, function () {
   body.classList.add(`loaded`);
@@ -82,16 +86,16 @@ const gameTimer = new GameTimer({
   timeMinutes: 5,
 });
 
-const animatedNumbers = new AnimatedNumbers({
+const secAwardNum = new AnimatedNumbers({
   selector: `.sec-award-num b`,
-  delay: 200,
+  delay: 3500,
   endNumber: 7,
 });
 
-const animatedNumbers2 = new AnimatedNumbers({
+const addAwardNum = new AnimatedNumbers({
   selector: `.add-award-num b`,
-  delay: 1000,
-  step: Math.floor(Math.random() * 300),
+  delay: 4500,
+  step: getRandomNum(450),
   startNumber: 11,
   endNumber: 900,
 });
@@ -106,15 +110,15 @@ const router = new Router([
   {
     path: `prizes`,
     onInit() {
-      animatedNumbers2.animate();
-      animatedNumbers.animate();
+      secAwardNum.animate();
+      addAwardNum.animate();
     },
 
     onLeave() {
-      animatedNumbers2.clear();
-      animatedNumbers2.setStartNumber();
-      animatedNumbers.clear();
-      animatedNumbers.setStartNumber();
+      secAwardNum.clear();
+      secAwardNum.setStartNumber();
+      addAwardNum.clear();
+      addAwardNum.setStartNumber();
     },
   },
   {
