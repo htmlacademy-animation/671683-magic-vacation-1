@@ -13,6 +13,7 @@ import './modules/splitting-typography';
 import updateImg from './modules/updateImg';
 import {GameTimer} from './modules/timer.js';
 import {Router} from './modules/router.js';
+import {AnimatedNumbers} from './modules/animated-numbers';
 
 // init modules
 mobileHeight();
@@ -81,6 +82,20 @@ const gameTimer = new GameTimer({
   timeMinutes: 5,
 });
 
+const animatedNumbers = new AnimatedNumbers({
+  selector: `.sec-award-num b`,
+  delay: 200,
+  endNumber: 7,
+});
+
+const animatedNumbers2 = new AnimatedNumbers({
+  selector: `.add-award-num b`,
+  delay: 1000,
+  step: Math.floor(Math.random() * 300),
+  startNumber: 11,
+  endNumber: 900,
+});
+
 const router = new Router([
   {
     path: `top`,
@@ -90,6 +105,17 @@ const router = new Router([
   },
   {
     path: `prizes`,
+    onInit() {
+      animatedNumbers2.animate();
+      animatedNumbers.animate();
+    },
+
+    onLeave() {
+      animatedNumbers2.clear();
+      animatedNumbers2.setStartNumber();
+      animatedNumbers.clear();
+      animatedNumbers.setStartNumber();
+    },
   },
   {
     path: `rules`,
