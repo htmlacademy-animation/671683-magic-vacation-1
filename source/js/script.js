@@ -13,6 +13,7 @@ import './modules/splitting-typography';
 import updateImg from './modules/updateImg';
 import {GameTimer} from './modules/timer.js';
 import {Router} from './modules/router.js';
+import {AnimatedNumbers} from './modules/animated-numbers';
 
 // init modules
 mobileHeight();
@@ -75,10 +76,27 @@ tempoResultBtnS.forEach((btn) => {
   });
 });
 
+// prizes
+const prizeItems = document.querySelectorAll(`.prizes__item`);
+
 const gameTimer = new GameTimer({
   minutesSelecctor: `.game__counter-min`,
   secondsSelector: `.game__counter-sec`,
   timeMinutes: 5,
+});
+
+const secAwardNum = new AnimatedNumbers({
+  selector: `.sec-award-num b`,
+  delay: 3500,
+  endNumber: 7,
+});
+
+const addAwardNum = new AnimatedNumbers({
+  selector: `.add-award-num b`,
+  delay: 6500,
+  step: 187,
+  startNumber: 11,
+  endNumber: 900,
 });
 
 const router = new Router([
@@ -90,6 +108,23 @@ const router = new Router([
   },
   {
     path: `prizes`,
+    onInit() {
+      prizeItems.forEach((item) => {
+        item.classList.add(`active`);
+      });
+      secAwardNum.animate();
+      addAwardNum.animate();
+    },
+
+    onLeave() {
+      prizeItems.forEach((item) => {
+        item.classList.remove(`active`);
+      });
+      secAwardNum.clear();
+      secAwardNum.setStartNumber();
+      addAwardNum.clear();
+      addAwardNum.setStartNumber();
+    },
   },
   {
     path: `rules`,

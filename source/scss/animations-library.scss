@@ -140,3 +140,13 @@
   }
 }
 
+@keyframes translateX {
+  from {
+    transform: translateX(var(--Xfrom));
+  }
+
+  to {
+    transform: translateX(var(--Xto));
+  }
+}
+

@@ -501,3 +501,126 @@
     color: #5f458c;
   }
 }
+
+
+// module4-task2
+.prizes__item {
+  &--journeys.active,
+  &--cases.active,
+  &--codes.active {
+    .prizes__icon {
+      animation-name: fadeIn;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+
+    .prizes__desc b {
+      animation-name: fadeIn;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+
+    .prizes__desc span {
+      animation-name: fadeInRight;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &--journeys.active {
+    --Xfrom: 30rem;
+    --Xto: 15rem;
+    animation-name: translateX;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+    @media (max-width: $tablet) and (orientation: portrait) {
+      --Xfrom: 0;
+      --Xto: 0;
+      animation-delay: 0.5s;
+    }
+
+    @media (max-width: $tablet) and (orientation: landscape) {
+      --Xfrom: 0;
+      --Xto: 0;
+      animation-delay: 0.5s;
+    }
+
+    .prizes__icon {
+      animation-delay: 0.5s;
+    }
+
+    .prizes__desc b {
+      animation-delay: 1.5s;
+    }
+
+    .prizes__desc span {
+      animation-delay: 2s;
+    }
+  }
+
+  &--cases.active {
+    .prizes__icon {
+      animation-delay: 2.5s;
+    }
+
+    .prizes__desc b {
+      animation-delay: 3s;
+    }
+
+    .prizes__desc span {
+      animation-delay: 3.5s;
+    }
+  }
+
+  &--codes {
+    --Xfrom: 3rem;
+    --Xto: 0;
+    animation-name: translateX;
+    animation-duration: 0.5s;
+    animation-delay: 4.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+    @media (max-width: $tablet) and (orientation: portrait) {
+      --Xfrom: 0;
+    }
+
+    @media (max-width: $tablet) and (orientation: landscape) {
+      --Xfrom: 0;
+    }
+
+    .prizes__icon {
+      animation-delay: 4.5s;
+    }
+
+    .prizes__desc b {
+      animation-delay: 6s;
+
+      @media (max-width: $tablet) and (orientation: portrait) {
+        animation-delay: 5.5s;
+      }
+
+      @media (max-width: $tablet) and (orientation: landscape) {
+        animation-delay: 5.5s;
+      }
+    }
+
+    .prizes__desc span {
+      animation-delay: 6.5s;
+
+      @media (max-width: $tablet) and (orientation: portrait) {
+        animation-delay: 6s;
+      }
+
+      @media (max-width: $tablet) and (orientation: landscape) {
+        animation-delay: 6s;
+      }
+    }
+  }
+}
